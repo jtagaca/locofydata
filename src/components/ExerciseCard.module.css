@@ -11,9 +11,8 @@
   display: inline-block;
 }
 .titleDiv {
-  letter-spacing: 0.3px;
   line-height: 45px;
-  font-weight: 600;
+  font-weight: 50;
 }
 .subtitleDiv {
   font-size: var(--font-size-base);
