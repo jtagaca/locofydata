@@ -1,0 +1,74 @@
+.cardImageIcon {
+  position: relative;
+  width: 373px;
+  height: 250px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.subtitleDiv,
+.titleDiv {
+  position: relative;
+  display: inline-block;
+}
+.titleDiv {
+  letter-spacing: 0.3px;
+  line-height: 45px;
+  font-weight: 600;
+}
+.subtitleDiv {
+  font-size: var(--font-size-base);
+  letter-spacing: 0.5px;
+  line-height: 14px;
+  opacity: 0.67;
+}
+.titlesDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-sm);
+}
+.rectangleIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 72px;
+  height: 29px;
+}
+.div {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  letter-spacing: 1.37px;
+  line-height: 19px;
+  font-weight: 600;
+  display: inline-block;
+}
+.durationDiv {
+  position: relative;
+  width: 72px;
+  height: 29px;
+  flex-shrink: 0;
+  font-size: var(--font-size-xl);
+}
+.textDiv {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  padding: 0 0 0 var(--padding-3xs);
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: -30px;
+}
+.exerciseCardDiv {
+  width: 373.33px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: var(--font-size-3xl);
+  color: var(--color-white);
+  font-family: var(--font-poppins);
+}
