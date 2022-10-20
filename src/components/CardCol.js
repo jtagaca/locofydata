@@ -1,17 +1,24 @@
 import ExerciseCard from "../components/ExerciseCard";
 import styles from "./CardCol.module.css";
 
-const CardCol = ({ rectangle10, rectangle101 }) => {
+const CardCol = ({
+  rectangle10,
+  rectangle101,
+  image1,
+  image2,
+  title1,
+  title2,
+}) => {
   return (
     <div className={styles.column1Div}>
       <ExerciseCard
-        cardImage="../cardimage@2x.png"
-        title="Treadmill"
+        cardImage={image1}
+        // title={title1}
         rectangle10={rectangle10}
       />
       <ExerciseCard
-        cardImage="../image@2x.png"
-        title="Running"
+        cardImage={image2}
+        // title={title2}
         rectangle101={rectangle101}
       />
     </div>
