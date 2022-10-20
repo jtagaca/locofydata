@@ -1,0 +1,29 @@
+.page2B {
+  position: relative;
+  letter-spacing: 1px;
+  display: inline-block;
+}
+.frameDiv,
+.page2Div {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+  gap: var(--gap-xs);
+}
+.frameDiv {
+  align-self: stretch;
+  padding: var(--padding-2xs) 0;
+  justify-content: flex-start;
+}
+.page2Div {
+  position: relative;
+  background-color: #000;
+  width: 100%;
+  padding: 0 0 100px;
+  justify-content: center;
+  text-align: left;
+  font-size: 100px;
+  color: var(--color-white);
+  font-family: var(--font-poppins);
+}

@@ -1,0 +1,108 @@
+.exercisesButton,
+.loginButton,
+.logoButton {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  font-family: var(--font-poppins);
+  color: var(--color-white);
+  text-align: left;
+  display: inline-block;
+}
+.logoButton {
+  font-size: var(--font-size-lg);
+  letter-spacing: 1px;
+  line-height: 22px;
+  font-weight: 600;
+}
+.exercisesButton,
+.loginButton {
+  font-size: var(--font-size-sm);
+  letter-spacing: 1.5px;
+  line-height: 12px;
+  opacity: 0.67;
+}
+.loginButton {
+  opacity: 0.7;
+}
+.menuLinksDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-lg);
+}
+.group2Icon {
+  position: absolute;
+  height: 46.88%;
+  width: 63.55%;
+  top: 26.56%;
+  right: 18.23%;
+  bottom: 26.56%;
+  left: 18.23%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.hamburgerIconButton {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  overflow: hidden;
+  display: none;
+}
+.menuRightDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.navDiv,
+.navbarDiv {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbarDiv {
+  flex-direction: column;
+  padding: var(--padding-md) var(--padding-2xl);
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+@media screen and (max-width: 1200px) {
+  .navbarDiv {
+    padding-left: var(--padding-lg);
+    padding-right: var(--padding-lg);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menuLinksDiv {
+    display: none;
+  }
+  .hamburgerIconButton {
+    display: flex;
+  }
+  .navbarDiv {
+    padding-left: var(--padding-xs);
+    padding-right: var(--padding-xs);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 428px) {
+  .navbarDiv {
+    padding: var(--padding-2xs) var(--padding-3xs);
+    box-sizing: border-box;
+  }
+}

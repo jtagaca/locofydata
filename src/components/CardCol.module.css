@@ -1,0 +1,26 @@
+.column1Div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--font-size-3xl);
+  color: var(--color-white);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 1200px) {
+  .column1Div {
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 768px) {
+  .column1Div {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 428px) {
+  .column1Div {
+    transform: scale(0.8);
+  }
+}

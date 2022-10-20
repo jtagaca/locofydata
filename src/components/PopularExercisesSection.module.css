@@ -1,0 +1,76 @@
+.popularExercisesDiv1 {
+  position: relative;
+  letter-spacing: 0.3px;
+  line-height: 45px;
+  font-weight: 600;
+  display: inline-block;
+}
+.sEEMOREEXERCISES {
+  position: relative;
+  font-size: var(--font-size-sm);
+  letter-spacing: 1.5px;
+  line-height: 12px;
+  text-align: right;
+  display: inline-block;
+  opacity: 0.67;
+}
+.exerciseCardsDiv,
+.titleDiv {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.exerciseCardsDiv {
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-md);
+  font-size: var(--font-size-3xl);
+}
+.popularExercisesDiv,
+.popularExercisesSectionDiv {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.popularExercisesDiv {
+  gap: var(--gap-lg);
+}
+.popularExercisesSectionDiv {
+  padding: var(--padding-sm) var(--padding-2xl) var(--padding-xl);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-2xl);
+  color: var(--color-white);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 1200px) {
+  .exerciseCardsDiv {
+    flex-direction: column;
+  }
+  .popularExercisesSectionDiv {
+    padding-left: var(--padding-lg);
+    padding-right: var(--padding-lg);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 768px) {
+  .popularExercisesSectionDiv {
+    padding-left: var(--padding-xs);
+    padding-right: var(--padding-xs);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 428px) {
+  .exerciseCardsDiv {
+    gap: 0;
+  }
+  .popularExercisesSectionDiv {
+    padding-left: var(--padding-3xs);
+    padding-right: var(--padding-3xs);
+    box-sizing: border-box;
+  }
+}
